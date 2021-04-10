@@ -2,41 +2,47 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego de Cifrado Cesar</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
       <header>
-        <h1><span></span>Juego de Cifrado César</h1>
-        <a href="/">Más sobre cifrado</a>
+        <h1><span></span>Cifrado César</h1>
+        <p>
+          <a href="/">Más sobre cifrado</a>
+        </p>
       </header>
       <main>
-        <section>
-          <div>
-            <button>Jugar</button>
-            <button>Cifrar / Descifrar</button>
+        <section class="options-container">
+          <div class="buttons-container">
+            <button class="button--play">Jugar</button>
+            <button class="button--cipher">Cifrar</button>
           </div>
-          <div>
+          <div class="description-offset--container">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod?</p>
-            <label for="offset">
-              <p>Desplazamiento</p>
-              <input type="text" autocomplete="offset" id="">
+            <label for="offset" class="offset-label">
+              <h2>Desplazamiento: </h2>
+              <input type="number" autocomplete="offset" id="" placeholder="0">
             </label>
           </div>
         </section>
-        <section>
-          <div>
+        <section class="cipher-container">
+          <div class="input-message--container">
             <label for="message">
               <h2>Cifrado</h2>
-              <input type="text"name="message" placeholder="Mensaje Cifrado">
+              <input type="text" name="message" placeholder="Mensaje Cifrado">
             </label>
           </div>
-          <div>
-            <span>Switch</span>
+          <div class="switch-button--container">
+            <button>
+              <span>Switch</span>
+            </button>
           </div>
-          <div>
-            <div>
+          <div class="result-message--container">
+            <div class="result-message">
               <h2>Descifrado</h2>
               <p>Mensaje Descifrado</p>
             </div>
