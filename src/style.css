@@ -7,10 +7,15 @@
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
+    --dark-blue: #232931;
+    --dark-gray: #393e46;
+    --green: #4ecca3;
+    --white: #eeeeee;
+    color: var(--white);
 }
 h1 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.2rem;
+    font-weight: 900;
 }
 h2 {
     font-size: 1.8rem;
@@ -23,8 +28,11 @@ a {
     font-size: 1.2rem;
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 1px solid black;
-    color: black;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+}
+body{
+    background-color: var(--dark-gray);
 }
 header {
     width: 100%;
@@ -38,19 +46,27 @@ header {
 }
 header h1 span {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     margin-right: 7px;
     vertical-align: middle;
-    background-image: url('../assets/img/cifrado-cesar.svg');
-    background-size: 100%;
+    background-color: var(--white);
+    -webkit-mask: url('../assets/img/cifrado-cesar.svg') no-repeat 100% 100%;
+    mask: url('../assets/img/cifrado-cesar.svg') no-repeat 100% 100%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
 }
 main {
     width: 100vw;
     max-width: 950px;
-    min-height: 80vh;
+    min-height: 100%;
     margin: 0 auto;
     padding: 0 20px;
+    padding-bottom: 10vh;
+}
+#root {
+    position: relative;
+    min-height: 100vh;
 }
 .options-container {
     display: flex;
@@ -71,8 +87,11 @@ main {
     height: 50px;
     margin: 0 10px;
     border-radius: 5px;
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 2.4rem;
+    font-weight: 900;
+    background-color: var(--white);
+    border: 0;
+    color: var(--dark-blue);
 }
 .description-offset--container {
     margin-top: 10px;
@@ -94,6 +113,9 @@ main {
     font-size: 1.8rem;
     text-align: center;
     border-radius: 3px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border: 0;
 }
 .cipher-container {
     display: flex;
@@ -116,6 +138,9 @@ main {
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     resize: none;
+    background-color: var(--dark-blue);
+    border: 0;
+    color: var(--white);
 }
 .cipher-container .switch-button--container{
     width: 100%;
@@ -126,10 +151,19 @@ main {
     width: 50px;
     height: 50px;
     border-radius: 4px;
-    background: url('../assets/img/swap.svg');
-    background-size: 50% 50%;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: var(--white);
+    border: 0;
+}
+.cipher-container .switch-button--container button p {
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    background-color: var(--dark-blue);
+    -webkit-mask: url('../assets/img/swap.svg') no-repeat 100% 100%;
+    mask: url('../assets/img/swap.svg') no-repeat 100% 100%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transform: rotate(90deg);
 }
 .cipher-container .result-message--container {
     width: 100%;
@@ -144,14 +178,19 @@ main {
     font-size: 1.6rem;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: var(--dark-blue);
+    border: 0;
 }
 footer {
-    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     height: 10vh;
-    margin: 0 5vw;
+    padding: 0 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--dark-blue);
 }
 footer p {
     font-size: 1.2rem;
