@@ -14,11 +14,11 @@ html {
     color: var(--white);
 }
 h1 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: 900;
 }
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 p {
@@ -214,4 +214,9 @@ button:hover, button:focus{
 }
 .cipher-container .input-message--container textarea:focus{
     outline: 1px solid var(--green);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
