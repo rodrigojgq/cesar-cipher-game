@@ -1,0 +1,21 @@
+main{
+    padding-bottom: 5vh;
+}
+.cipher-container {
+    flex-wrap: nowrap;
+}
+.cipher-container .input-message--container{
+    height: 50vh;
+}
+.cipher-container .switch-button--container{
+    width: 40%;
+}
+.cipher-container .result-message--container {
+    height: 50vh;
+}
+.cipher-container .result-message--container .result-message p{
+    height: calc(50vh*0.8);
+}
+.cipher-container .switch-button--container button p {
+    transform: rotate(0deg);
+}

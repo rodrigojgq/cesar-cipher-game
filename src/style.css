@@ -38,7 +38,7 @@ header {
     width: 100%;
     height: 10vh;
     padding: 0 3vw;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -58,7 +58,7 @@ header h1 span {
 }
 main {
     width: 100vw;
-    max-width: 950px;
+    max-width: 1100px;
     min-height: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -126,13 +126,13 @@ main {
 }
 .cipher-container .input-message--container{
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     height: 200px;
 }
 .cipher-container .input-message--container textarea{
     height: 80%;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     margin-top: 10px;
     font-size: 1.6rem;
     border-radius: 5px;
@@ -167,16 +167,15 @@ main {
 }
 .cipher-container .result-message--container {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     height: 200px;
 }
 .cipher-container .result-message--container .result-message p{
     height: 160px;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     margin-top: 10px;
     font-size: 1.6rem;
-    border: 1px solid black;
     border-radius: 5px;
     background-color: var(--dark-blue);
     border: 0;
@@ -195,5 +194,23 @@ footer {
 footer p {
     font-size: 1.2rem;
     margin: 5px 0;
-    
+}
+/* Estilos para interaccion */
+a:hover, a:focus{
+    color: var(--green);
+}
+button:hover, button:focus{
+    background-color: var(--green);
+    outline: 0;
+}
+.cipher-container .switch-button--container button:hover {
+    background-color: var(--green);
+    outline: 0;
+}
+.description-offset--container .offset-label input:focus {
+    outline: 1px solid var(--green);
+}
+.cipher-container .input-message--container textarea:focus{
+    outline: 1px solid var(--green);
+    border-bottom: 1px solid var(--green);
 }
