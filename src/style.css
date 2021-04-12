@@ -89,9 +89,14 @@ main {
     border-radius: 5px;
     font-size: 2.4rem;
     font-weight: 900;
-    background-color: var(--white);
     border: 0;
     color: var(--dark-blue);
+}
+.buttons-container .button--unactive {
+    background-color: var(--white);
+}
+.buttons-container .button--active {
+    background-color: var(--green);
 }
 .description-offset--container {
     margin-top: 10px;
@@ -141,6 +146,7 @@ main {
     background-color: var(--dark-blue);
     border: 0;
     color: var(--white);
+    text-transform: uppercase;
 }
 .cipher-container .switch-button--container{
     width: 100%;
@@ -180,6 +186,7 @@ main {
     background-color: var(--dark-blue);
     border: 0;
     overflow: auto;
+    text-transform: uppercase;
 }
 footer {
     position: absolute;
@@ -201,8 +208,12 @@ a:hover, a:focus{
     color: var(--green);
     border-bottom: 1px solid var(--green);
 }
-button:hover, button:focus{
+.buttons-container .button--unactive:hover {
     background-color: var(--green);
+}
+.buttons-container .button--unactive:focus,
+.button--active:focus,
+.switch-button--container button:focus {
     outline: 0;
 }
 .cipher-container .switch-button--container button:hover {

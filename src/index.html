@@ -20,34 +20,34 @@
       <main>
         <section class="options-container">
           <div class="buttons-container">
-            <button class="button--play">Jugar</button>
-            <button class="button--cipher">Descifrar</button>
+            <button class="button--unactive" id="button-play">Jugar</button>
+            <button class="button--active" id="button-cipher-decipher">Descifrar</button>
           </div>
           <div class="description-offset--container">
             <p>Ingresa el desplazamiento que tiene el mensaje cifrado.</p>
             <label for="offset" class="offset-label">
               <h2>Desplazamiento: </h2>
-              <input type="number" autocomplete="offset" id="" placeholder="0">
+              <input type="number" autocomplete="offset" id="offset" placeholder="0">
             </label>
           </div>
         </section>
         <section class="cipher-container">
           <div class="input-message--container">
             <label for="message">
-              <h2>Cifrado</h2>
+              <h2 id="first-box-title">Cifrado</h2>
               <!-- <input type="text" name="message" placeholder="Mensaje Cifrado"> -->
-              <textarea name="message" placeholder="Mensaje Cifrado"></textarea>
+              <textarea name="message" placeholder="Mensaje Cifrado" id="message"></textarea>
             </label>
           </div>
           <div class="switch-button--container">
-            <button>
+            <button id="swap">
               <p></p>
             </button>
           </div>
           <div class="result-message--container">
             <div class="result-message">
-              <h2>Descifrado</h2>
-              <p>Mensaje Descifrado</p>
+              <h2 id="second-box-title">Descifrado</h2>
+              <p id="result-message">Mensaje Descifrado</p>
             </div>
           </div>
         </section>
