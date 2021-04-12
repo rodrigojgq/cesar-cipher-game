@@ -51,8 +51,8 @@ header h1 span {
     margin-right: 7px;
     vertical-align: middle;
     background-color: var(--white);
-    -webkit-mask: url('../assets/img/cifrado-cesar.svg') no-repeat 100% 100%;
-    mask: url('../assets/img/cifrado-cesar.svg') no-repeat 100% 100%;
+    -webkit-mask: url('assets/img/cifrado-cesar.svg') no-repeat 100% 100%;
+    mask: url('assets/img/cifrado-cesar.svg') no-repeat 100% 100%;
     -webkit-mask-size: cover;
     mask-size: cover;
 }
@@ -165,8 +165,8 @@ main {
     height: 25px;
     margin: auto;
     background-color: var(--dark-blue);
-    -webkit-mask: url('../assets/img/swap.svg') no-repeat 100% 100%;
-    mask: url('../assets/img/swap.svg') no-repeat 100% 100%;
+    -webkit-mask: url('assets/img/swap.svg') no-repeat 100% 100%;
+    mask: url('assets/img/swap.svg') no-repeat 100% 100%;
     -webkit-mask-size: contain;
     mask-size: contain;
     transform: rotate(90deg);
