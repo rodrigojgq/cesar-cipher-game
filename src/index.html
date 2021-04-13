@@ -24,7 +24,7 @@
             <button class="button--active" id="button-cipher-decipher">Descifrar</button>
           </div>
           <div class="description-offset--container">
-            <p>Ingresa el desplazamiento que tiene el mensaje cifrado.</p>
+            <p id="description">Ingresa el desplazamiento que tiene el mensaje cifrado.</p>
             <label for="offset" class="offset-label" id="offset-container">
               <h2>Desplazamiento: </h2>
               <input type="number" autocomplete="offset" id="offset" placeholder="0">
@@ -36,7 +36,7 @@
             <label for="message">
               <h2 id="first-box-title">Cifrado</h2>
               <!-- <input type="text" name="message" placeholder="Mensaje Cifrado"> -->
-              <textarea name="message" placeholder="Mensaje Cifrado" id="message"></textarea>
+              <textarea name="message" placeholder="Escribe tu mensaje cifrado aqui" id="message"></textarea>
             </label>
           </div>
           <div class="switch-button--container">
@@ -47,7 +47,7 @@
           <div class="result-message--container">
             <div class="result-message">
               <h2 id="second-box-title">Descifrado</h2>
-              <p id="result-message">Mensaje Descifrado</p>
+              <p id="result-message"></p>
             </div>
           </div>
         </section>
