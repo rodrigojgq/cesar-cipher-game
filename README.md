@@ -36,7 +36,7 @@ Para el proyecto se utilizó las siguientes tecnologías:
 
 ## Funcionamiento y Limitaciones del Proyecto
 
-El desplazamiento ingresado puede ser cualquier número entero positivo. Sin embargo, el cifrado entre de las letras no admite la "ñ" y tampoco las vocales con tilde o diéresis.
+El desplazamiento ingresado puede ser cualquier número entero positivo o negativo. Sin embargo, el cifrado entre de las letras no admite la "ñ" y tampoco las vocales con tilde o diéresis.
 El cifrado entre números y símbolos se realiza de forma separada desde el símbolo de espacio hasta el símbolo de arroba en el código ASCII. El resto de los símbolos no tienen un cambio o desplazamiento en el cifrado o descifrado.
 
 El botón de "JUEGO" activa el juego para el usuario. El botón de "CIFRAR" o "DESCIFRAR" activa el modo de cifrado/descifrado y permite hacer un intercambio entre los contenedores de mensaje. El bótón que se encuentra entre los contenedores permite el mismo intercambio dentre cifrado y descifrado en ambos modos de uso.

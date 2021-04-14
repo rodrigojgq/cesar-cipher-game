@@ -13,6 +13,15 @@ const cipher = {
       let mayus = originalLetter > 64 && originalLetter < 91;
       let minus = originalLetter > 96 && originalLetter < 123;
       let simbols = originalLetter > 31 && originalLetter < 65;
+      if(mayus || minus){
+        if(offset < 0){
+          offset = 26 + offset%26;
+        }
+      }else if(simbols){
+        if(offset < 0){
+          offset = 33 + offset%33;
+        }
+      }
       if (mayus){
         codeLetter = (originalLetter%65+offset)%26+65;
       }else if(minus){
@@ -45,6 +54,15 @@ const cipher = {
       let simbols = originalLetter > 31 && originalLetter < 65;
       let firstLetter = 0;
       let range = offset;
+      if(mayus || minus){
+        if(offset < 0){
+          offset = 26 + offset%26;
+        }
+      }else if(simbols){
+        if(offset < 0){
+          offset = 33 + offset%33;
+        }
+      }
       if (mayus){
         firstLetter = 65;
         range = 26;
