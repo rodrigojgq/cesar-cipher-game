@@ -1,5 +1,5 @@
 const gameWords = {
-    words: ['Roma', 'Imperio', 'Encriptacion', 'Olimpiadas', 'Cesar'],
+    words: ['Roma', 'Imperio', 'Encriptado', 'Olimpiadas', 'Ciberseguridad'],
 
     shuffleWords() {
         for (let i = this.words.length - 1; i > 0; i--) {

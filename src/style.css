@@ -129,6 +129,14 @@ main {
     align-items: center;
     margin: 15px 0;
 }
+#check-answer {
+    display: none;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: 8px;
+    vertical-align: middle;
+}
 .cipher-container .input-message--container{
     width: 100%;
     max-width: 500px;
@@ -228,4 +236,18 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+.cipher-container .wrong-logo{
+    background-color: #e81a1a;
+    -webkit-mask: url('assets/img/x-mark.svg') no-repeat 100% 100%;
+    mask: url('assets/img/x-mark.svg') no-repeat 100% 100%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+.cipher-container .correct-logo{
+    background-color: var(--green);
+    -webkit-mask: url('assets/img/comprobar.svg') no-repeat 100% 100%;
+    mask: url('assets/img/comprobar.svg') no-repeat 100% 100%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
 }
