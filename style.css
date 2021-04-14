@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    --dark-blue: #232931;
+    --dark-gray: #393e46;
+    --green: #4ecca3;
+    --white: #eeeeee;
+    color: var(--white);
+}
+h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+p {
+    font-size: 1.6rem;
+}
+a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+}
+body{
+    background-color: var(--dark-gray);
+}
+header {
+    width: 100%;
+    height: 10vh;
+    padding: 0 3vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 7px;
+    vertical-align: middle;
+    background-color: var(--white);
+    -webkit-mask: url('assets/img/cifrado-cesar.svg') no-repeat 100% 100%;
+    mask: url('assets/img/cifrado-cesar.svg') no-repeat 100% 100%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+main {
+    width: 100vw;
+    max-width: 1100px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-bottom: 10vh;
+}
+#root {
+    position: relative;
+    min-height: 100vh;
+}
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttons-container {
+    max-width: 450px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons-container button {
+    width: 35vw;
+    max-width: 200px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 2.4rem;
+    font-weight: 900;
+    border: 0;
+    color: var(--dark-blue);
+}
+.buttons-container .button--unactive {
+    background-color: var(--white);
+}
+.buttons-container .button--active {
+    background-color: var(--green);
+}
+.description-offset--container {
+    margin-top: 10px;
+    max-width: 450px;;
+}
+.description-offset--container p {
+    margin-bottom: 10px;
+}
+.description-offset--container .offset-label {
+    max-width: 500px;
+}
+.description-offset--container .offset-label h2{
+    display: inline;
+    margin-right: 5px;
+}
+.description-offset--container .offset-label input{
+    width: 60px;
+    height: 30px;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 3px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border: 0;
+}
+.cipher-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+#check-answer {
+    display: none;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.cipher-container .input-message--container{
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+}
+.cipher-container .input-message--container textarea{
+    height: 80%;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+    background-color: var(--dark-blue);
+    border: 0;
+    color: var(--white);
+}
+.cipher-container .switch-button--container{
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+.cipher-container .switch-button--container button {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: var(--white);
+    border: 0;
+}
+.cipher-container .switch-button--container button p {
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    background-color: var(--dark-blue);
+    -webkit-mask: url('assets/img/swap.svg') no-repeat 100% 100%;
+    mask: url('assets/img/swap.svg') no-repeat 100% 100%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transform: rotate(90deg);
+}
+.cipher-container .result-message--container {
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+}
+.cipher-container .result-message--container .result-message p{
+    height: 160px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    background-color: var(--dark-blue);
+    border: 0;
+    overflow: auto;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark-blue);
+}
+footer p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+/* Estilos para interaccion */
+a:hover, a:focus{
+    color: var(--green);
+    border-bottom: 1px solid var(--green);
+}
+.buttons-container .button--unactive:hover {
+    background-color: var(--green);
+}
+.buttons-container .button--unactive:focus,
+.button--active:focus,
+.switch-button--container button:focus {
+    outline: 0;
+}
+.cipher-container .switch-button--container button:hover {
+    background-color: var(--green);
+    outline: 0;
+}
+.description-offset--container .offset-label input:focus {
+    outline: 1px solid var(--green);
+}
+.cipher-container .input-message--container textarea:focus{
+    outline: 1px solid var(--green);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cipher-container .wrong-logo{
+    background-color: #e81a1a;
+    -webkit-mask: url('assets/img/x-mark.svg') no-repeat 100% 100%;
+    mask: url('assets/img/x-mark.svg') no-repeat 100% 100%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+.cipher-container .correct-logo{
+    background-color: var(--green);
+    -webkit-mask: url('assets/img/comprobar.svg') no-repeat 100% 100%;
+    mask: url('assets/img/comprobar.svg') no-repeat 100% 100%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}

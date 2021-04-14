@@ -1,0 +1,19 @@
+main{
+    padding-bottom: 0;
+}
+.cipher-container .input-message--container{
+    height: 70vh;
+}
+.cipher-container .switch-button--container{
+    width: 20%;
+}
+.cipher-container .result-message--container {
+    height: 70vh;
+}
+.cipher-container .result-message--container .result-message p{
+    height: calc(70vh*0.8);
+}
+footer {
+    height: 7vh;
+    padding: 0 8vw;
+}
