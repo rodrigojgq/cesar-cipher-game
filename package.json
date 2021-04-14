@@ -1,5 +1,5 @@
 {
-  "name": "cipher",
+  "name": "cesar-cipher-game",
   "version": "1.0.0",
   "main": "src/index.html",
   "license": "MIT",
@@ -22,5 +22,23 @@
     "jest": "^26.6.1",
     "opener": "^1.5.1",
     "serve": "^11.0.0"
-  }
+  },
+  "description": "## Índice",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigojgq/cesar-cipher-game.git"
+  },
+  "keywords": [
+    "Cipher",
+    "Game"
+  ],
+  "author": "Rodrigo Goitia",
+  "bugs": {
+    "url": "https://github.com/rodrigojgq/cesar-cipher-game/issues"
+  },
+  "homepage": "https://github.com/rodrigojgq/cesar-cipher-game#readme"
 }
