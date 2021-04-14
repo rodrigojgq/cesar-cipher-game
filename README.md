@@ -20,7 +20,7 @@ Se decidió utilizar el tipo de letra Roboto, para que la lectura sea clara. Ade
 
 ### Previsualizacion de Pantalla Mobile
 
-![image](/src/assets/img/preview-mobile.png)
+<img src="./src/assets/img/preview-mobile.png" width="450px">
 
 ### Previsualizacion de Pantalla de Escritorio
 
