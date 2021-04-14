@@ -8,7 +8,7 @@ Para jugar, el usuario debe seleccionar el botón de "JUEGO". En el juego los us
 
 En cualquier momento se puede intercambiar los contenedores de mensaje cifrado y descifrado con el botón que se encuentra al medio de estos. En el modo de juego este botón reinicia el juego y cambia el modo de juego, para que el usuario cifre o descifre las palabras.
 
-Para ver la página web haz ![click aqui]{https://rodrigojgq.github.io/cesar-cipher-game/}
+Para ver la página web haz [click aqui](https://rodrigojgq.github.io/cesar-cipher-game/)
 
 ## Proceso de Diseño
 
