@@ -51,6 +51,14 @@ El botón de "JUEGO" activa el juego para el usuario. El botón de "CIFRAR" o "D
 
 Este proyecto es parte de la ruta del bootcamp de [Laboratoria - Frontend Developer](https://www.laboratoria.la/) del año 2020. Estoy realizando sus proyectos de forma autodidacta e independiente.
 
+## Licencia
+
+> Este proyecto esta bajo la licencia MIT.
+
+## Autor
+
+Hecho con 💚 por [rodruxdev](https://twitter.com/rodruxdev)
+
 <div align="center">
   <h3>
     <a href="https://rodrigojgq.github.io/cesar-cipher-game/">
